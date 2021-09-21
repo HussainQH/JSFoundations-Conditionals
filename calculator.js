@@ -12,20 +12,20 @@ const Operation = prompt("Please choose the operation (+, -, /, *): ")
 
 let Result ;
 
-if(Operation == `+`) { 
+if(Operation === `+`) { 
     Result = Num_1 + Num_2
 
 }
 
-else if ( Operation == `-`) {
+else if ( Operation === `-`) {
     Result = Num_1 - Num_2
 }
 
-else if ( Operation == `*`) {
+else if ( Operation === `*`) {
     Result = Num_1 * Num_2
 }
 
-else if ( Operation == `/`) {
+else if ( Operation === `/`) {
     Result = Num_1 / Num_2
 
 }
@@ -41,7 +41,10 @@ let Final_Result;
 Final_Result = Result.toFixed(3)
 
 
-console.log (Final_Result)
+console.log (`${Num_1} ${Operation} ${Num_2}` + " = " + `${Final_Result}`)
+
+
+
 
 
 
